@@ -1,4 +1,4 @@
-Meeting Management App: 
+Meeting Management App: <br> <br>
 ![alt text](1.PNG)
 
 ![alt text](2.PNG)
