@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MeetingManagement" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/teal700</item>
+         <item name="colorPrimaryVariant">@color/purple700</item>
+         <item name="colorOnPrimary">@color/white</item>
+
+         <item name="colorSecondary">@color/teal200</item>
+         <item name="colorSecondaryVariant">@color/teal700</item>
+         <item name="colorOnSecondary">@color/black</item>
+
+         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MeetingManagement.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.MeetingManagement.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.MeetingManagement" parent="Base.Theme.MeetingManagement" />
+</resources>

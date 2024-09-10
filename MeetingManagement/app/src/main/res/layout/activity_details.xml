@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailsActivity">
+
+    <EditText
+        android:id="@+id/editContactNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editPhoneNoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editContactNameText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Phone Number"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/addContactBtn"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPhoneNoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add Contact"
+        android:backgroundTint="@color/teal700"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_action"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+    <item
+        android:icon="@android:drawable/sym_action_call"
+        android:id="@+id/clear"
+        android:title="Clear all Meetings"/>
+
+    <item
+        android:icon="@android:drawable/sym_action_call"
+        android:id="@+id/clearAllMeetingsForToday"
+        android:title="Clear All Meetings For Today"/>
+
+    <item
+        android:icon="@android:drawable/sym_action_call"
+        android:id="@+id/pushMeetings"
+        android:title="Push Meetings"/>
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Add Meeting Section -->
+
+    <LinearLayout
+        android:id="@+id/firstHorizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="2sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp">
+
+        <EditText
+            android:id="@+id/editTextMeetingName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Meeting Name"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextMeetingDate"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Date"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/teal700"
+            android:text="Select Date" />
+
+    </LinearLayout>
+
+    <!-- Second Horizontal Line -->
+    <LinearLayout
+        android:id="@+id/secondHorizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/firstHorizontalLine"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <EditText
+            android:id="@+id/editTextMeetingTime"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:hint="Time"
+            android:padding="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/teal700"
+            android:text="Clock" />
+
+        <Button
+            android:id="@+id/addMeetingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/teal700"
+            android:padding="16dp"
+            android:text="Add Meeting" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ViewMeetingsBySelection"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondHorizontalLine"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/select"
+        android:text="@string/select">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/listViewMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ViewMeetingsBySelection"
+        android:padding="16dp"
+        android:focusable="false"
+        tools:listitem="@layout/meeting_item">
+    </ListView>
+</RelativeLayout>
