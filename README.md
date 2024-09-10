@@ -24,8 +24,6 @@
       <li>
         Push Meetings: Pushes meetings to the next available weekdays.
       </li>
-      
-      
     </ul>
 </p>
 ![alt text](1.PNG)
